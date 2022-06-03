@@ -42,7 +42,6 @@ public class SILab2Test {
         ex = assertThrows(IllegalArgumentException.class, () -> SILab2.function(createList("0", "0", "#")));
         assertTrue(ex.getMessage().contains("List length should be a perfect square"));
 
-
         expectedList = Arrays.asList("#", "#", "#", "#");
         assertEquals(expectedList, SILab2.function(createList("#", "#", "#", "#")));
 
